@@ -214,7 +214,7 @@ QwenWrapper/
 
 ## 许可证
 
-本项目采用 Apache 2.0 许可证 - 参考 QwenCode 项目的许可证条款。
+本项目采用 MIT 许可证。
 
 ## 贡献
 
