@@ -42,14 +42,14 @@ qwen --version  # 验证安装成功
   "agent_servers": {
     "qwen-code-acp": {
       "command": "node",
-      "args": ["/Users/your-username/qwen-acp-wrapper.js", "--log-level", "serve"]
+      "args": ["./qwen-acp-wrapper.js", "--log-level", "serve"]
     }
   }
 }
 ```
 
 **重要**:
-1. 请将上述配置中的 `/Users/your-username/qwen-acp-wrapper.js` 替换为你实际的包装器脚本路径。
+1. 请将上述配置中的 `./qwen-acp-wrapper.js` 替换为你实际的包装器脚本路径。
 2. `--log-level` 参数支持两种模式：
    - `dev`: 输出详细日志信息（开发调试时使用）
    - `serve`: 仅输出错误信息（生产环境推荐使用）
@@ -191,10 +191,12 @@ pkill -f "qwen --experimental-acp"
 
 ### 代码结构
 
-# QwenWrapper/
+```
+QwenWrapper/
 ├── qwen-acp-wrapper.js    # ACP 包装器脚本
 ├── CLAUDE.md             # Claude Code 开发指导
 └── README.md            # 本文档
+```
 
 ### 修改包装器
 
