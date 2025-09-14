@@ -1,0 +1,8 @@
+{
+  "agent_servers": {
+    "qwen-code-acp": {
+      "command": "/path/QwenCodeACP/qwen-acp-wrapper.js",
+      "args": []
+    }
+  }
+}
