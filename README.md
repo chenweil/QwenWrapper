@@ -1,10 +1,33 @@
+⚠️ 直接接入更方便，项目废弃。⚠️
+
+另外iflow 0.2.23后也可直接接入了。
+
+配置如下 macOS 为例：
+
+```json
+"agent_servers": {
+    "iflow": {
+      "command": "iflow",
+      "args": ["--experimental-acp"]
+    },
+    "qwen": {
+      "command": "qwen",
+      "args": ["--experimental-acp"]
+    }
+}
+```
+
+
 # QwenWrapper: QwenCode ACP 集成项目
 
 本项目实现了将 QwenCode CLI 程序通过 ACP (Agent Client Protocol) 协议集成到 Zed 编辑器中，使 QwenCode 能够作为 Zed 的 AI 助手代理进行代码协作和对话交互。
 
+
 ## 项目概述
 
 - ✅ 实现了 Zed 与 QwenCode 的稳定 ACP 协议通信
+
+
 - ✅ 支持中文对话和代码生成
 - ✅ 完整的配置和故障排除指南
 - ✅ 详细的调试日志记录功能
